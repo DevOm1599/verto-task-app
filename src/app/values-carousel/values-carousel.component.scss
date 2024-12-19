@@ -1,0 +1,101 @@
+/* Container styling */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-left: -90px !important;
+}
+
+/* Scrollable area styling */
+.scroll-container {
+  display: flex;
+  gap: 1.5rem; /* Adds spacing between the cards */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none; /* For IE and Edge */
+  scrollbar-width: none; /* For Firefox */
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* For Chrome and Safari */
+}
+
+/* Card styling */
+.card {
+  flex-shrink: 0;
+  width: 250px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+  scroll-snap-align: center; /* Ensures cards align properly when scrolled */
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-8px); /* Adds a hover effect */
+}
+
+/* Specific card colors */
+.card:nth-child(1) {
+  background-color: #d7e5ff; /* Light blue */
+  color: #333;
+}
+
+.card:nth-child(2) {
+  background-color: #ffebe8; /* Light pink */
+  color: #333;
+}
+
+.card:nth-child(3) {
+  background-color: #d5f1f0; /* Light cyan */
+  color: #333;
+}
+
+.card:nth-child(4) {
+  background-color: #ffd9d9; /* Light coral */
+  color: #333;
+}
+
+.card:nth-child(5) {
+  background-color: #ffe4d1; /* Light peach */
+  color: #333;
+}
+
+.card:nth-child(6) {
+  background-color: #e2e9ff; /* Light lavender */
+  color: #333;
+}
+
+/* Image (PNG) styling */
+.card .icon {
+  width: 250px; /* Resize the image to 100px width */
+  height: 150px; /* Resize the image to 100px height */
+  object-fit: contain; /* Ensure the image maintains its aspect ratio */
+  margin-top: 12px; /* Adds space between description and image */
+}
+
+/* Card text styling */
+.card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Title styling */
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 24px;
+  padding-top: 40px;
+}

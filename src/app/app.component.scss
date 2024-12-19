@@ -1,0 +1,12 @@
+.links {
+  position: absolute;
+  top: 20px;
+  a {
+    margin-left: 50px;
+    color: gray;
+  }
+}
+
+.is-active {
+  color: white !important;
+}

@@ -1,0 +1,13 @@
+<div class="container">
+  <h2 class="text-3xl font-semibold mb-8 text-center">
+    We're driven by our values
+  </h2>
+  <div class="scroll-container">
+    <div *ngFor="let value of values" class="card">
+      <h3 class="text-xl font-semibold mb-2">{{ value.title }}</h3>
+      <p class="text-gray-500 mb-4">{{ value.description }}</p>
+      <!-- Move the icon below the description -->
+      <img [src]="value.icon" alt="{{ value.title }} icon" class="icon" />
+    </div>
+  </div>
+</div>
